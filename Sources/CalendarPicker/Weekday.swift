@@ -38,6 +38,7 @@ enum Weekday: String, CustomStringConvertible, CaseIterable, Codable {
 }
 
 
+@available(iOS 15, *)
 func getCurrentWeek() -> [String] {
     var weekdays: [String] = []
     var startOfWeek = Date.now.startOfWeek()
